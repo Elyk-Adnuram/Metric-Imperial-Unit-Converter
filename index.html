@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="hero">
+            <h1> Metric/Imperial Unit Conversion</h1>
+            <input type="number" id="input-el" placeholder="0">
+            <button id="convert-btn">Convert</button> 
+            </div>
+            <div id="display-container-main">
+            <div class="display-containers"> <h2 class="display-heading">Length (Meter/Feet) <output class="display-output" id="output-length"> </div>
+            <div class="display-containers"> <h2 class="display-heading">Volume (Litres/Gallons) <output class="display-output"id="output-volume"> </div>
+            <div class="display-containers"><h2 class="display-heading">Mass (Kilograms/Pounds) <output class="display-output" id="output-mass"> </div>
+            </div>
+        
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
