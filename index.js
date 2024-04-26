@@ -16,22 +16,21 @@ const literToGallon = 0.264;
 const kiloToPound = 2.204;
 
 //when convert button is clicked the display functions will be rendered in the DOM
-convertBtn.addEventListener("click",displayAllCalculations);
-document.body.addEventListener("keyup", callOnEnter);
-
-function displayAllCalculations(){
- displayLength();
+convertBtn.addEventListener("click", function(){
+  displayLength();
   displayVolume();
   displayMass();
-}
+ )
 
-function callOnEnter(e) {
-if (inputEl != "")
-    if (e.key === "Enter") {
- displayAllCalculations()
+document.addEventListener("keyup", function(e) {
+if (inputEl != ""){
+   if (e.key === "Enter") {
+  displayLength();
+  displayVolume();
+  displayMass();
   }
 }
-
+});
 
 //this function displays the value of feet to meters conversion and vice versa
 function displayLength() {
