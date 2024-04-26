@@ -16,8 +16,8 @@ const literToGallon = 0.264;
 const kiloToPound = 2.204;
 
 //when convert button is clicked the display functions will be rendered in the DOM
-convertBtn.addEventListener("click",displayAllCalculations();
-document.body.addEventListener("keyup", callOnEnter(e));
+convertBtn.addEventListener("click",displayAllCalculations);
+document.body.addEventListener("keyup", callOnEnter);
 
 function displayAllCalculations(){
  displayLength();
