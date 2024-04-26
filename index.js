@@ -17,7 +17,7 @@ const kiloToPound = 2.204;
 
 //when convert button is clicked the display functions will be rendered in the DOM
 convertBtn.addEventListener("click",displayAllCalculations();
-document.body.addEventListener("keyup", callOnEnter(e);
+document.body.addEventListener("keyup", callOnEnter(e));
 
 function displayAllCalculations(){
  displayLength();
@@ -26,11 +26,9 @@ function displayAllCalculations(){
 }
 
 function callOnEnter(e) {
-if (inputEl.value != "")
+if (inputEl != "")
     if (e.key === "Enter") {
-  displayLength();
-  displayVolume();
-  displayMass();
+ displayAllCalculations()
   }
 }
 
