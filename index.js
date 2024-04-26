@@ -22,6 +22,14 @@ convertBtn.addEventListener("click", function () {
   displayMass();
 });
 
+convertBtn.addEventListener("keyup", function (e) {
+  if (e.key === "Enter") {
+  displayLength();
+  displayVolume();
+  displayMass();
+  }
+});
+
 //this function displays the value of feet to meters conversion and vice versa
 function displayLength() {
   const inputValue = inputEl.value;
@@ -31,7 +39,7 @@ function displayLength() {
     ${inputValue} feet = ${metres.toFixed(3)} meters </p>`;
 }
 
-//this function displays the value of litres to gallons conversion and vice versa
+//displays the value of litres to gallons conversion and vice versa
 function displayVolume() {
   const inputValue = inputEl.value;
   const gallons = inputValue * literToGallon;
@@ -42,7 +50,7 @@ function displayVolume() {
     ${inputValue} gallons = ${litres.toFixed(3)}  litres </p>`;
 }
 
-//this function displays the value of kilos to pounds conversion and vice versa
+//displays the value of kilos to pounds conversion and vice versa
 function displayMass() {
   const inputValue = inputEl.value;
   const pounds = inputValue * kiloToPound;
