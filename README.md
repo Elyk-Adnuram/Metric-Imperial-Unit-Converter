@@ -16,3 +16,7 @@ This project enables a user to perform the conversion of the below:
 ## Deployment
 
 Live version can be viewed at: https://elyk-adnuram.github.io/Metric-Imperial-Unit-Converter/
+
+### Useful resources
+
+https://favicon.io/
