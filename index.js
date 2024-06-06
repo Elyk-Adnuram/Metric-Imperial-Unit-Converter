@@ -43,6 +43,7 @@ const displayAll = () => {
   displayLength();
   displayVolume();
   displayMass();
+   inputEl.value = ""
 };
 //when convert button is clicked the display functions will be rendered in the DOM
 convertBtn.addEventListener("click", function () {
